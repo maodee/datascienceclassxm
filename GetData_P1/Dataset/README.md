@@ -35,7 +35,7 @@ The train and test data sets are read from their respective folders. Using cbind
 4. Step 2, Extracts only the measurements on the mean and standard deviation for each measurement
 The features.txt information is read to for the grep to take place. Using the grep function, any text that matches mean or std are returned with their respective ids. Using the respective ids, the text are paste together with a keyword V to form the actual variable names to extract. Act and subject were appended to this as well to form the basis of column extraction from the complete data set.
 
-5.Step 3 Use descriptive activity names to name the activities in the data set
+5. Step 3 Use descriptive activity names to name the activities in the data set
 The objective here is to rename the various activities numbered in 1-6 to their actual descriptive names. Using the mutate function, a new column was created using the ifelse statement to determine the column id value to match it with its descriptive name. After the mutate operation is complete, the original Act column containing the activity id is removed.
 
 6. Step 4 - Appropriately labels the data set with descriptive variable names.
